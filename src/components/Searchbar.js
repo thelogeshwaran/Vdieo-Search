@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const SearchBar = ({ onEnter }) => {
   const [term, setTerm] = useState("");
-  onSumitform = (event) => {
+  const onSumitform = (event) => {
     event.preventDefault();
     onEnter(term);
   };
